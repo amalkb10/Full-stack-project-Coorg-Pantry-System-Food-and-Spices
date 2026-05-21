@@ -1,0 +1,224 @@
+.admin-layout {
+    display: flex;
+    min-height: 100vh;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+.admin-sidebar {
+    width: 280px;
+    background-color: #1a2a1b;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-logo {
+    padding: 2rem;
+    border-bottom: 1px solid #2c4a30;
+    text-align: center;
+}
+
+.admin-logo h2 {
+    font-family: 'Playfair Display', serif;
+    color: #eef2eb;
+    margin: 0;
+}
+
+.admin-nav {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0;
+}
+
+.admin-nav button {
+    background: transparent;
+    color: #a4b3a6;
+    border: none;
+    padding: 1.2rem 2rem;
+    text-align: left;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-left: 4px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.admin-nav button:hover {
+    background: rgba(255,255,255,0.05);
+    color: white;
+}
+
+.admin-nav button.active {
+    background: #2c4a30;
+    color: white;
+    border-left: 4px solid #eef2eb;
+    font-weight: bold;
+}
+
+.admin-main {
+    flex: 1;
+    padding: 3rem;
+    overflow-y: auto;
+}
+
+.admin-panel header h1 {
+    font-size: 2rem;
+    color: #1a2a1b;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #d4ddd5;
+}
+
+/* Tables */
+.table-responsive {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    overflow: hidden;
+}
+
+.admin-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin-table th, .admin-table td {
+    padding: 1.2rem;
+    text-align: left;
+    border-bottom: 1px solid #eef2eb;
+}
+
+.admin-table th {
+    background: #f7f9f6;
+    color: #556b58;
+    font-weight: 600;
+}
+
+.admin-table tbody tr:hover {
+    background: #fafcfb;
+}
+
+.amount {
+    font-weight: bold;
+    color: #2c4a30;
+}
+
+.desc-cell {
+    max-width: 300px;
+    color: #556b58;
+}
+
+.status-badge {
+    background: #eef2eb;
+    color: #2c4a30;
+    padding: 0.4rem 0.8rem;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+.admin-product-thumb {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 8px;
+    border: 1px solid #d4ddd5;
+}
+
+.admin-del-btn {
+    background: #e74c3c;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.admin-del-btn:hover {
+    background: #c0392b;
+}
+
+.admin-edit-btn {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.admin-edit-btn:hover {
+    background: #2980b9;
+}
+
+/* Forms */
+.admin-form {
+    background: white;
+    padding: 2.5rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+    max-width: 800px;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.form-row.split {
+    flex-direction: row;
+    gap: 1.5rem;
+}
+
+.form-row.split > div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.admin-form label {
+    font-weight: bold;
+    color: #1a2a1b;
+    margin-bottom: 0.5rem;
+}
+
+.admin-form input[type="text"], 
+.admin-form input[type="number"], 
+.admin-form textarea {
+    padding: 1rem;
+    border: 1px solid #d4ddd5;
+    border-radius: 8px;
+    font-family: inherit;
+    font-size: 1rem;
+}
+
+.admin-form input[type="file"] {
+    padding: 0.8rem;
+    background: #f7f9f6;
+    border: 1px dashed #2c4a30;
+    border-radius: 8px;
+}
+
+.admin-form small {
+    color: #556b58;
+    margin-top: 0.5rem;
+}
+
+.admin-submit-action {
+    background: #2c4a30;
+    color: white;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.admin-submit-action:hover {
+    background: #1a2a1b;
+}

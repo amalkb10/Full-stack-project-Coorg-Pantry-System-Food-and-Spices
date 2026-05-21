@@ -1,0 +1,12 @@
+@import './SignIn.css';
+
+/* We reuse the exact same classes in both SignIn.jsx and SignUp.jsx 
+so all grid, flex, text, and form styles automatically apply 
+by simply importing the SignIn structure.
+
+If we need SignUp specific overrides, we put them here. */
+
+.auth-page .auth-container .signup-bg {
+    /* Overridden background already handled in SignIn.css but reinforced here */
+    background: url('../public/about_heritage.png') center/cover no-repeat;
+}
